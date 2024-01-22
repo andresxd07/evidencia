@@ -16,9 +16,9 @@ jobs:
         ref: prueba
 
     - name: Implementar en producción
-      run: 
+      run: |
         git checkout master
-        git merge  ${{ github.sha }} -m "Implementar cambios desde la rama de prueba"
-
+        git merge ${{ github.sha }} -m "Implementar cambios desde la rama de prueba"
         git push origin master
+
         
