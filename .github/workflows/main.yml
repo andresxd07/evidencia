@@ -19,6 +19,7 @@ jobs:
       run: 
         git config --global user.email "aandres@gmail.com"
         git config --global user.name "andres"
+
         git checkout master
         git merge --no-ff ${{ github.sha }} -m "Implementar cambios desde la rama de prueba"
 
