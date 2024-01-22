@@ -19,9 +19,9 @@ jobs:
       run: |
        git config --global user.email "aandresarango087@gmail.com"
        git config --global user.name "Andres"
-        git checkout origin master
+        git checkout prueba2
         git merge --allow-unrelated-histories ${{ github.sha }} -m "Implementar cambios desde la rama de prueba"
-        git push origin  master
+        git push prueba2
 
 
         
