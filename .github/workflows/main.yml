@@ -21,7 +21,7 @@ jobs:
        git config --global user.name "Andres"
         git checkout origin master
         git merge --allow-unrelated-histories ${{ github.sha }} -m "Implementar cambios desde la rama de prueba"
-        git push origin origin master
+        git push origin  master
 
 
         
