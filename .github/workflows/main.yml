@@ -18,7 +18,8 @@ jobs:
     - name: Implementar en producción
       run: |
         git checkout prueba2
-        git merge ${{ github.sha }} -m "Implementar cambios desde la rama de prueba"
+        git merge --allow-unrelated-histories ${{ github.sha }} -m "Implementar cambios desde la rama de prueba"
         git push origin prueba2
+
 
         
